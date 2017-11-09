@@ -11,6 +11,7 @@ public class LevelOrderTraversal {
 
 		System.out.println("Level Order Traversal");
 		LevelOrderWithRecursion(head);
+		LevelOrder(head);
 
 	}
 
@@ -27,4 +28,51 @@ public class LevelOrderTraversal {
 		}while(true);
 	}
 
+	
+	
+	
+	public static void LevelOrder(TreeNode head) {
+		Queue<TreeNode> queue = new LinkedList();
+		queue.add(head);
+		while(!queue.isEmpty()) {
+			TreeNode node = queue.remove();
+			System.out.println(node.data+" ");
+			if(node.left != null) {
+				queue.add(node.left);
+			}
+			if(node.right != null) {
+				queue.add(node.right);
+			}
+		}
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 }

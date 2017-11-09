@@ -9,9 +9,9 @@ public class PostOrderTraversal {
 		CreateTree tree1 = new CreateTree();
 		TreeNode head = tree1.createTree();
 
-		System.out.println("Pre Order Traversal");
+		System.out.println("Post Order Traversal");
 		postOrderWithRecursion(head);
-		System.out.println("\nPre Order Traversal without recursion");
+		System.out.println("\nPost Order Traversal without recursion");
 		nonRecursion(head);
 
 	}

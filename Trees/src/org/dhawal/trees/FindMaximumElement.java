@@ -16,7 +16,10 @@ public class FindMaximumElement {
 		int max = head.data;
 		int a = findMaximumElement(head.left);
 		int b = findMaximumElement(head.right);
-		return a >= max && a >= b ? a : (b >= max && b >= a) ? b : max; 
+		if(a > max ) max = a;
+		if(b>max ) max = b;
+		return max;
+//		return a >= max && a >= b ? a : (b >= max && b >= a) ? b : max; 
 	}
 
 }

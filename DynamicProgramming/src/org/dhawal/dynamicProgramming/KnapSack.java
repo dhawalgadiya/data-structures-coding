@@ -37,6 +37,8 @@ public class KnapSack {
 				if(i==0 || j==0) {
 					K[i][j] = 0;
 				}
+				// If Weight of item is greater than the current capacity, we can' take the item 
+				// get the max profit from previous item.  
 				else if(weights[i-1] > j) {
 					K[i][j] = K[i-1][j];
 				}
